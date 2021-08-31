@@ -6,3 +6,4 @@ tsconfig.json
 .prettierrc
 .eslintrc
 .gitignore
+.github
