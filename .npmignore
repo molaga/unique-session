@@ -1,9 +1,0 @@
-src
-dist/*map
-.idea
-package-lock.json
-tsconfig.json
-.prettierrc
-.eslintrc
-.gitignore
-.github
