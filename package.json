@@ -4,6 +4,10 @@
   "description": "Easily protect your clients from session hijacking",
   "main": "dist",
   "exports": "./dist/index.js",
+  "repository": {
+    "url": "https://github.com/molaga/unique-session"
+  },
+  "homepage": "",
   "dependencies": {
     "crypto": "~1.0",
     "debug": "~4.3",

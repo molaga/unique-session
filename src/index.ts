@@ -13,6 +13,8 @@ declare interface ExtendedRequest {
     headers: Record<string, string>;
 }
 
+type ExpressMiddleware = (request?: Request, response?: Response, next?: NextFunction) => void;
+
 /**
  * global options for the unique-session package
  */
@@ -45,7 +47,7 @@ export interface Options {
 
 declare type Request = ExtendedRequest & ExpressRequest & Record<string, string>;
 
-export function uniqueSession(options: Options = {}): RequestHandler {
+export function uniqueSession(options: Options = {}): ExpressMiddleware {
     const UNIQUE_SESSION_KEY = 'unique-session';
     let hashFields = options.hashFields || ['accept', 'accept-language', 'user-agent'];
     let ipField = options.ipField || 'headers.x-forwarded-for';
