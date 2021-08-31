@@ -1,6 +1,6 @@
 {
   "name": "unique-session",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easily protect your clients from session hijacking",
   "main": "dist",
   "exports": "./dist/index.js",
