@@ -56,3 +56,20 @@ const options = {
 
 app.use(uniqueSession(options));
 ```
+
+## Debugging
+
+In order to have visibility on what's going on in the background requests on the server, you can simply set the DEBUG environment variable to start seeing relevant logs fired from this package
+
+You might want to see that all the relevant fields such as IP and headers are correctly passed for the hash signature. this could be easily achieved with -
+
+```
+$ DEBUG=unique-session* node app.js
+```
+
+Then you'll see variety logs such as -
+
+- Which configuration were loaded
+- Raw payload before the generated hash signature
+- The result hash signature
+- In case of malicious activity, you'll get an indication log
