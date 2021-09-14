@@ -26,7 +26,13 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "unique session",
+    "session",
+    "express",
+    "middleware",
+    "fastify"
+  ],
   "author": "",
   "license": "ISC"
 }
